@@ -79,31 +79,25 @@ class _MainActivityState extends State<MainActivity> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Info Aplikasi'),
+          title: Text('Deskripsi Aplikasi'),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
-                Text('Mata Kuliah QMS.'),
-                Text('\"Mari Bajual!\"'),
+                Text('Mata Kuliah Quality Management System.'),
+                Text('\"Valentine Book\'s!\"'),
                 Padding(
                   padding: EdgeInsets.only(top: 10),
                 ),
-                Text('Karya Anak TI C 2016 POLNAM'),
+                Text('Oleh TI B 2016 POLNAM'),
                 Padding(
                   padding: EdgeInsets.only(top: 10),
                 ),
                 Text(
-                  'Charla Gracia Dezire Sopacua',
+                  'Claudia A Narahawarin',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  '1316144070',
-                  style: TextStyle(fontSize: 14),
-                ),
-                Text('Owen Wattimena',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
-                Text(
-                  '1316144074',
+                  '1316144040',
                   style: TextStyle(fontSize: 14),
                 ),
               ],
@@ -113,11 +107,7 @@ class _MainActivityState extends State<MainActivity> {
             FlatButton(
               child: Row(
                 children: <Widget>[
-                  Text('Ter Eeunch'),
-                  Icon(
-                    Icons.favorite,
-                    color: Colors.red,
-                  )
+                  Text('OK'),
                 ],
               ),
               onPressed: () {
@@ -134,7 +124,7 @@ class _MainActivityState extends State<MainActivity> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mari Bajual!'),
+        title: Text('Valentine Book\'s!'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.list),
@@ -178,12 +168,12 @@ class _MainActivityState extends State<MainActivity> {
               TextFormField(
                 controller: _barang,
                 decoration: InputDecoration(
-                  labelText: 'Nama Barang',
+                  labelText: 'Nama Buku',
                   border: OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value.isEmpty) {
-                    return 'Mohon masukan Nama Barang';
+                    return 'Mohon masukan Nama Buku';
                   }
                   return null;
                 },
@@ -212,12 +202,12 @@ class _MainActivityState extends State<MainActivity> {
                 keyboardType: TextInputType.number,
                 controller: _harga,
                 decoration: InputDecoration(
-                  labelText: 'Harga',
+                  labelText: 'Harga Satuan',
                   border: OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value.isEmpty) {
-                    return 'Mohon masukan Harga';
+                    return 'Mohon masukan Harga Satuan';
                   }
                   return null;
                 },

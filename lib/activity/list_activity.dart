@@ -2,7 +2,6 @@ import 'package:aplikasi_penjualan_barang/model/history.dart';
 import 'package:aplikasi_penjualan_barang/module/database.dart';
 import 'package:flutter/material.dart';
 // import 'package:path/path.dart';
-import 'dart:async';
 
 class ListActivity extends StatefulWidget {
   @override
